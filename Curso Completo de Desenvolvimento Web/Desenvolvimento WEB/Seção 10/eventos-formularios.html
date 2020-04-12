@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Eventos - Formulários</title>
+	<meta charset="utf-8">
+
+	<!-- jquery -->
+		<script src="jquery-3.3.1.js"></script>
+
+	<script type="text/javascript">
+		
+		/* 
+		.focus() - acionado quando o elemento recebe o foco do cursor.
+		.blur() - acionado quando o elemento perde o foco do cursor.
+		.change() - acionado quando o estado do elemento é modificado.
+		*/
+		
+		$(document).ready( function(){
+
+			/*
+			$('.campo1').focus( function(){
+				alert('Elemento foi focado');
+			});
+			*/
+
+			/*
+			$('.campo1').blur( function(){
+				alert('Elemento perdeu o foco');
+			});
+			*/
+
+			$('.campo2').change( function(){
+				alert('Elemento foi modificado');
+			});
+
+		});
+
+		
+
+	</script>
+
+</head>
+<body>
+
+	<input type="text" class="campo1" />
+	<select class="campo2">
+		<option value="1">Primeira opção</option>
+		<option value="2">Segunda opção</option>
+	</select>
+
+</body>
+</html>
